@@ -1,0 +1,11 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  text-align:center;
+  padding: 30px
+}
+
+#root{
+  color: #079ad9;
+  display: inline-block;
+}
