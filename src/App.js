@@ -70,7 +70,7 @@ class App extends React.Component {
         moves: Array(9).fill(null),
         firstPlayer: "o",
         secondPlayer: "x",
-				mode: "firstPlayer"
+	mode: "firstPlayer"
       });
     }
   }
