@@ -1,3 +1,9 @@
+# tictactoe-minimax-algorithm
+
+### A tic tac toe game with bot that simply can't lose
+
+On theory this work on any board size. But because of it recursive nature (simulating all possible move and outcome) the run time will grow exponentially with the board size. So if you plan on running anything larger than a 4X4 board on an old laptop, then DON'T.
+
 ### Clone and run the program using
 
 ```
@@ -9,6 +15,7 @@ npm start
 ### Underlying algorithm
 You can find the source code at ~/src/App.js
 ```
+// the win combo should be pre-generated to optimize run time
 this.winCombo = [
 			[0, 1, 2],
 			[3, 4, 5],
