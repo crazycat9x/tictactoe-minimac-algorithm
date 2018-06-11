@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import logo from "./logo.svg";
 import "./App.css";
-import _ from "lodash"
+import _ from "lodash";
 
 function getAllIndexes(arr, val) {
 	var indexes = [],
@@ -89,12 +89,8 @@ class App extends React.Component {
 			let scores = [];
 			for (let o of freeSlots) {
 				tempBoard[o] = player;
-				let score = this.miniMax(
-					tempBoard,
-					opponent,
-					origPlayer,
-					origOpponent
-				).score;
+				let score = this.miniMax(tempBoard, opponent, origPlayer, origOpponent)
+					.score;
 				tempBoard[o] = null;
 				scores.push({ index: o, score: score });
 			}
@@ -200,9 +196,7 @@ class App extends React.Component {
 				<div className="control">
 					<div>
 						<h3>I want to be</h3>
-						<div
-							className="radio-wrapper"
-							onClick={() => this.chooseXO("x")}>
+						<div className="radio-wrapper" onClick={() => this.chooseXO("x")}>
 							<div
 								className={
 									this.state.firstPlayer == "x"
@@ -212,9 +206,7 @@ class App extends React.Component {
 								X
 							</div>
 						</div>
-						<div
-							className="radio-wrapper"
-							onClick={() => this.chooseXO("o")}>
+						<div className="radio-wrapper" onClick={() => this.chooseXO("o")}>
 							<div
 								className={
 									this.state.firstPlayer == "o"
