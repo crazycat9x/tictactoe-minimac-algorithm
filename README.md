@@ -11,6 +11,9 @@ git clone https://github.com/crazycat9x/tictactoe-minimax-algorithm.git
 npm install
 npm start
 ```
+#### You should be greeted with this
+
+<img src="docs/main-view.png" width="350"/>
 
 ### Underlying algorithm
 You can find the source code at ~/src/App.js
